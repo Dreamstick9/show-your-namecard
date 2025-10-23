@@ -3,19 +3,96 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contributors</title>
+        
+        <!-- SEO Meta Tags -->
+        <title>Contributors Gallery - Project Contributors | Show Your Namecard</title>
+        <meta name="description" content="Meet our amazing project contributors! Discover the talented developers, designers, and contributors who make this project possible. A modern, animated gallery showcasing our team." />
+        <meta name="keywords" content="contributors, developers, open source, project team, GitHub contributors, web development, team showcase" />
+        <meta name="author" content="Show Your Namecard Project" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://subhamdas461.github.io/show-your-namecard/" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://subhamdas461.github.io/show-your-namecard/" />
+        <meta property="og:title" content="Contributors Gallery - Project Contributors" />
+        <meta property="og:description" content="Meet our amazing project contributors! Discover the talented developers, designers, and contributors who make this project possible." />
+        <meta property="og:image" content="https://subhamdas461.github.io/show-your-namecard/og-image.png" />
+        <meta property="og:site_name" content="Show Your Namecard" />
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://subhamdas461.github.io/show-your-namecard/" />
+        <meta property="twitter:title" content="Contributors Gallery - Project Contributors" />
+        <meta property="twitter:description" content="Meet our amazing project contributors! Discover the talented developers, designers, and contributors who make this project possible." />
+        <meta property="twitter:image" content="https://subhamdas461.github.io/show-your-namecard/og-image.png" />
+        
+        <!-- Performance & SEO -->
+        <link rel="preload" href="./css/style.css" as="style" />
+        <link rel="preload" href="./js/script.js" as="script" />
+        <link rel="dns-prefetch" href="//github.com" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Contributors Gallery",
+          "description": "Meet our amazing project contributors! Discover the talented developers, designers, and contributors who make this project possible.",
+          "url": "https://subhamdas461.github.io/show-your-namecard/",
+          "mainEntity": {
+            "@type": "ItemList",
+            "name": "Project Contributors",
+            "description": "A collection of project contributors and team members"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://subhamdas461.github.io/show-your-namecard/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contributors",
+                "item": "https://subhamdas461.github.io/show-your-namecard/#contributors"
+              }
+            ]
+          }
+        }
+        </script>
+        
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <div class="theme-toggle">
-            <button id="theme-btn" class="theme-btn" aria-label="Toggle theme">
-                <span class="theme-icon">☀</span>
-            </button>
-        </div>
-        <div class="container">
-            <h1 class="title">✨ Project Contributors</h1>
-            <div id="cards-container" class="cards-container"></div>
-        </div>
+        <header class="header">
+            <div class="theme-toggle">
+                <button id="theme-btn" class="theme-btn" aria-label="Toggle theme">
+                    <span class="theme-icon">☀</span>
+                </button>
+            </div>
+        </header>
+        
+        <main class="main">
+            <div class="container">
+                <header class="page-header">
+                    <h1 class="title">✨ Project Contributors</h1>
+                    <p class="subtitle">Meet the talented developers, designers, and contributors who make this project possible</p>
+                </header>
+                
+                <section id="contributors" class="contributors-section" aria-label="Project Contributors">
+                    <div id="cards-container" class="cards-container"></div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Show Your Namecard Project. Built with ❤️ by our amazing contributors.</p>
+        </footer>
 
         <script src="./js/script.js"></script>
     </body>
